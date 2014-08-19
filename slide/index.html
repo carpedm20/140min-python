@@ -83,8 +83,8 @@
 				</section>
 
         <section data-transition="fade">
-          <img width="700px;" style="margin: 0; border: none; box-shadow: none;"src="img/python.png">
-          <p><small><cite>비단뱀 아니라고 합니다</cite></small></p>
+          <img width="700px;" class="borderless" src="img/python.png">
+          <p><small><em>비단뱀 아니라고 합니다</em></small></p>
 				</section>
 
         <section>
@@ -93,9 +93,9 @@
             <img width="200px;" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Guido_van_Rossum_OSCON_2006.jpg/640px-Guido_van_Rossum_OSCON_2006.jpg">
           </p>
           <p>귀도 반 로섬</p>
-          <p><small><cite>
-            1991년 크리스마스에 할거 없어서 만듦..
-          </cite></small></p>
+          <p><small><em>
+            1991년 크리스마스에 할거 없어서 만듦
+          </em></small></p>
           <small>
             (제가 한살 더 어려요ㅋ)
           </small>
@@ -113,99 +113,152 @@
 					<h2>
             스크립트 언어
 					</h2>
-          <p><small><cite>
+          <p><small><em>
             컴파일 안한다고 합니다
-          </cite></small></p>
+          </em></small></p>
 				</section>
 
-				<section>
+        <section data-transition="fade">
 					<h2>왜 배워야 할까?</h2>
           <p>스크립트 언어 (?)</p>
         </section>
 
         <section>
-					<ul style="list-style: none;">
-            <li><h2>빠르게 짜고</h2></li>
-            <li><h2>빠르게 확인하고</h2></li>
-            <li><h2>빠르게 고친다</h2></li>
+          <ul class="quite-li">
+            <li class="fragment roll-in" data-fragment-index="1">
+              <h2><b>빠르게</b> 짜고</h2>
+            </li>
+            <li class="fragment roll-in" data-fragment-index="2">
+              <h2><b>빠르게</b> 확인하고</h2>
+            </li>
+            <li class="fragment roll-in" data-fragment-index="3">
+              <h2><b>빠르게</b> 고친다</h2>
+            </li>
 					</ul>
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
+        <section>
+          <p><img class="borderless" src="img/fast.png"/></p>
+          <p>빠르고 <b>즐거운</b> 코딩</p>
 				</section>
 
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
+          <img src="img/pyramid_cpp.png">
+          <p>피라미드를 만들어 볼까요?</p>
+        </section>
+
+				<section data-transition="linear" data-background="#3f3f3f" data-background-transition="slide" data-markdown>
+          <script type="text/template">
+            ```
+            #include <iostream>
+            using namespace std;
+
+            int main() {
+              int row;
+              cout << "row : ";
+              cin >> row;
+              for (int i = 0; i < row; i++) {
+                for (int j = 0; j < row - i; j++)
+                  cout << ' ';
+
+                for (int j = 0; j < 2 * i + 1; j++)
+                  cout << '*';
+
+                cout << endl;
+              }
+            }
+            ```
+          </script>
 				</section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
+				<section data-transition="linear" data-background="#3f3f3f" data-background-transition="slide" data-markdown>
+          <script type="text/template">
+            ```
+            row = int(raw_input("row : "))
+            for i in range(row):
+              print " " * (row - i) + "*" * (2 * i + 1)
+            ```
+          </script>
 				</section>
 
 				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
+          <p>중요한 것은</p>
+          <h2>줄 수가 아닌 <b>간결함</b></h2>
 				</section>
+
+				<section>
+          <section>
+            <h2>파이썬의 특징</h2>
+            <ol>
+              <li class="fragment roll-in">인간적인 언어이다</li>
+              <li class="fragment roll-in">간결하다</li>
+              <li class="fragment roll-in">개발속도가 <b>빠르다</b></li>
+              <li class="fragment roll-in">프로그래밍이 <b>재밌다</b></li>
+            </ol>
+          </section>
+
+          <section data-markdown>
+            <script type="text/template">
+              ## 1. 인간적인 언어이다
+              <small><em>라고 쓰고 "읽기 쉽다" 라고 읽는다</em></small>
+
+              ```
+              if "여친" not in ["김태희","천송이","공효진"]:
+                print "여친이 없습니다"
+
+              for i in ["설마","벌써","지루하신건","아니시죠?"]:
+                print i
+              ```
+            </script>
+          </section>
+
+          <section data-markdown>
+            <script type="text/template">
+              ## 2. 간결하다
+              <small><em>라고 쓰고 "우아하다" 라고 읽는다</em></small>
+
+              ```
+              languages = ['python', 'perl', 'c', 'java']
+
+              for lang in languages:
+                  if lang in ['python', 'perl']:
+                      print("%6s need interpreter" % lang)
+                  elif lang in ['c', 'java']:
+                      print("%6s need compiler" % lang)
+                  else:
+                      print("should not reach here")
+              ```
+            </script>
+          </section>
+
+          <section>
+            <h3>3. 개발속도가 빠르다</h3>
+            <h2>Life is too short, You need python.</h2>
+          </section>
+
+          <section>
+            <h2>4. 프로그래밍이 재밌다</h2>
+            <p>나에게 파이썬만큼 프로그래밍을 하는 순간을</p>
+            <p><strong>즐기게</strong> 해준 언어는 없었다</p>
+            <br/>
+            <p><small><em>
+                가장 강조하고 싶은 부분이지만, 표현하긴 어렵군요
+            </em></small></p>
+          </section>
+				</section>
+
+        <section>
+          <h2>Life is short, you need Python</h2>
+        </section>
+
+        <section>
+          <h2>Reference</h2>
+          <ul>
+            <li><a href="https://wikidocs.net/book/1">점프 투 파이썬</a></li>
+            <li><a href="http://mearie.org/documents/how-not-to-teach-python/seminar.pdf">발로 하는 파이썬 세미나</a></li>
+            <li><a href="https://wikidocs.net/book/1">점프 투 파이썬</a></li>
+          </ul>
+        </section>
 
 				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
 					<h2>Background Transitions</h2>
@@ -263,7 +316,7 @@ function linkify( selector ) {
 				</section>
 
 				<section>
-					<section id="fragments">
+          <section>
 						<h2>Fragmented Views</h2>
 						<p>Hit the next arrow...</p>
 						<p class="fragment">... to step through ...</p>
