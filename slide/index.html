@@ -55,16 +55,16 @@
 					</p>
 				</section>
 
-				<section data-width="100px" data-markdown>
-					<script type="text/template">
-            ```
-              me = Person()
-              while(me.awake()):
-                me.hack()
-                me.code()
-            ```
-          </script>
-				</section>
+				<section data-transition="linear" data-background="#3f3f3f" data-background-transition="slide">
+          <pre class="zenburn" style="width:70%;">
+            <code class="python" data-trim>
+me = Person()
+while(me.awake()):
+    me.hack()
+    me.code()
+            </code>
+          </pre>
+        </section>
 
 				<section>
 					<h2>Python</h2>
@@ -150,39 +150,41 @@
           <p>피라미드를 만들어 볼까요?</p>
         </section>
 
-				<section data-transition="linear" data-background="#3f3f3f" data-background-transition="slide" data-markdown>
-          <script type="text/template">
-            ```
-            #include <iostream>
-            using namespace std;
+				<section data-transition="linear" data-background="#272822" data-background-transition="slide">
+          <pre class="monokai">
+            <code class="transparent cpp" data-trim>
+#include <iostream>
+using namespace std;
 
-            int main() {
-              int row;
-              cout << "row : ";
-              cin >> row;
-              for (int i = 0; i < row; i++) {
-                for (int j = 0; j < row - i; j++)
-                  cout << ' ';
+int main() {
+  int row;
+  cout << "row : ";
+  cin >> row;
+  for (int i = 0; i < row; i++) {
+    for (int j = 0; j < row - i; j++)
+      cout << ' ';
 
-                for (int j = 0; j < 2 * i + 1; j++)
-                  cout << '*';
+    for (int j = 0; j < 2 * i + 1; j++)
+      cout << '*';
 
-                cout << endl;
-              }
-            }
-            ```
-          </script>
+    cout << endl;
+  }
+}
+
+// test
+            </code>
+          </pre>
 				</section>
 
-				<section data-transition="linear" data-background="#3f3f3f" data-background-transition="slide" data-markdown>
-          <script type="text/template">
-            ```
-            row = int(raw_input("row : "))
+				<section data-transition="linear" data-background="#3f3f3f" data-background-transition="slide">
+          <pre class="zenburn">
+            <code class="transparent python" data-trim>
+row = int(raw_input("row : "))
 
-            for i in range(row):
-              print " " * (row - i) + "*" * (2 * i + 1)
-            ```
-          </script>
+for i in range(row):
+    print " " * (row - i) + "*" * (2 * i + 1)
+            </code>
+          </pre>
 				</section>
 
 				<section>
