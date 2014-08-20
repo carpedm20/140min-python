@@ -1,0 +1,114 @@
+/*
+Monokai style - ported by Luigi Maselli - http://grigio.org
+*/
+
+pre.monokai code {
+  display: block; padding: 0.5em;
+  background: #272822;
+}
+
+pre.monokai .tag,
+pre.monokai .tag .title,
+pre.monokai .keyword,
+pre.monokai .literal,
+pre.monokai .change,
+pre.monokai .winutils,
+pre.monokai .flow,
+pre.monokai .lisp .title,
+pre.monokai .clojure .built_in,
+pre.monokai .nginx .title,
+pre.monokai .tex .special {
+  color: #F92672;
+}
+
+pre.monokai code {
+  color: #DDD;
+}
+
+pre.monokai code .constant {
+        color: #66D9EF;
+}
+
+pre.monokai .class .title {
+        color: white;
+}
+
+pre.monokai .attribute,
+pre.monokai .symbol,
+pre.monokai .symbol .string,
+pre.monokai .value,
+pre.monokai .regexp {
+        color: #BF79DB;
+}
+
+pre.monokai .tag .value,
+pre.monokai .string,
+pre.monokai .subst,
+pre.monokai .title,
+pre.monokai .haskell .type,
+pre.monokai .preprocessor,
+pre.monokai .ruby .class .parent,
+pre.monokai .built_in,
+pre.monokai .sql .aggregate,
+pre.monokai .django .template_tag,
+pre.monokai .django .variable,
+pre.monokai .smalltalk .class,
+pre.monokai .javadoc,
+pre.monokai .django .filter .argument,
+pre.monokai .smalltalk .localvars,
+pre.monokai .smalltalk .array,
+pre.monokai .attr_selector,
+pre.monokai .pseudo,
+pre.monokai .addition,
+pre.monokai .stream,
+pre.monokai .envvar,
+pre.monokai .apache .tag,
+pre.monokai .apache .cbracket,
+pre.monokai .tex .command,
+pre.monokai .prompt {
+  color: #A6E22E;
+}
+
+pre.monokai .comment,
+pre.monokai .java .annotation,
+pre.monokai .python .decorator,
+pre.monokai .template_comment,
+pre.monokai .pi,
+pre.monokai .doctype,
+pre.monokai .deletion,
+pre.monokai .shebang,
+pre.monokai .apache .sqbracket,
+pre.monokai .tex .formula {
+  color: #75715E;
+}
+
+pre.monokai .keyword,
+pre.monokai .literal,
+pre.monokai .css .id,
+pre.monokai .phpdoc,
+pre.monokai .title,
+pre.monokai .haskell .type,
+pre.monokai .vbscript .built_in,
+pre.monokai .sql .aggregate,
+pre.monokai .rsl .built_in,
+pre.monokai .smalltalk .class,
+pre.monokai .diff .header,
+pre.monokai .chunk,
+pre.monokai .winutils,
+pre.monokai .bash .variable,
+pre.monokai .apache .tag,
+pre.monokai .tex .special,
+pre.monokai .request,
+pre.monokai .status {
+  font-weight: bold;
+}
+
+pre.monokai .coffeescript .javascript,
+pre.monokai .javascript .xml,
+pre.monokai .tex .formula,
+pre.monokai .xml .javascript,
+pre.monokai .xml .vbscript,
+pre.monokai .xml .css,
+pre.monokai .xml .cdata {
+  opacity: 0.5;
+}

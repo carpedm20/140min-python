@@ -5,110 +5,110 @@ based on dark.css by Ivan Sagalaev
 
 */
 
-pre code {
+pre.zenburn code {
   display: block; padding: 0.5em;
   background: #3F3F3F;
   color: #DCDCDC;
 }
 
-pre .keyword,
-pre .tag,
-pre .css .class,
-pre .css .id,
-pre .lisp .title,
-pre .nginx .title,
-pre .request,
-pre .status,
-pre .clojure .attribute {
+pre.zenburn .keyword,
+pre.zenburn .tag,
+pre.zenburn .css .class,
+pre.zenburn .css .id,
+pre.zenburn .lisp .title,
+pre.zenburn .nginx .title,
+pre.zenburn .request,
+pre.zenburn .status,
+pre.zenburn .clojure .attribute {
   color: #E3CEAB;
 }
 
-pre .django .template_tag,
-pre .django .variable,
-pre .django .filter .argument {
+pre.zenburn .django .template_tag,
+pre.zenburn .django .variable,
+pre.zenburn .django .filter .argument {
   color: #DCDCDC;
 }
 
-pre .number,
-pre .date {
+pre.zenburn .number,
+pre.zenburn .date {
   color: #8CD0D3;
 }
 
-pre .dos .envvar,
-pre .dos .stream,
-pre .variable,
-pre .apache .sqbracket {
+pre.zenburn .dos .envvar,
+pre.zenburn .dos .stream,
+pre.zenburn .variable,
+pre.zenburn .apache .sqbracket {
   color: #EFDCBC;
 }
 
-pre .dos .flow,
-pre .diff .change,
-pre .python .exception,
-pre .python .built_in,
-pre .literal,
-pre .tex .special {
+pre.zenburn .dos .flow,
+pre.zenburn .diff .change,
+pre.zenburn .python .exception,
+pre.zenburn .python .built_in,
+pre.zenburn .literal,
+pre.zenburn .tex .special {
   color: #EFEFAF;
 }
 
-pre .diff .chunk,
-pre .subst {
+pre.zenburn .diff .chunk,
+pre.zenburn .subst {
   color: #8F8F8F;
 }
 
-pre .dos .keyword,
-pre .python .decorator,
-pre .title,
-pre .haskell .type,
-pre .diff .header,
-pre .ruby .class .parent,
-pre .apache .tag,
-pre .nginx .built_in,
-pre .tex .command,
-pre .prompt {
+pre.zenburn .dos .keyword,
+pre.zenburn .python .decorator,
+pre.zenburn .title,
+pre.zenburn .haskell .type,
+pre.zenburn .diff .header,
+pre.zenburn .ruby .class .parent,
+pre.zenburn .apache .tag,
+pre.zenburn .nginx .built_in,
+pre.zenburn .tex .command,
+pre.zenburn .prompt {
     color: #efef8f;
 }
 
-pre .dos .winutils,
-pre .ruby .symbol,
-pre .ruby .symbol .string,
-pre .ruby .string {
+pre.zenburn .dos .winutils,
+pre.zenburn .ruby .symbol,
+pre.zenburn .ruby .symbol .string,
+pre.zenburn .ruby .string {
   color: #DCA3A3;
 }
 
-pre .diff .deletion,
-pre .string,
-pre .tag .value,
-pre .preprocessor,
-pre .built_in,
-pre .sql .aggregate,
-pre .javadoc,
-pre .smalltalk .class,
-pre .smalltalk .localvars,
-pre .smalltalk .array,
-pre .css .rules .value,
-pre .attr_selector,
-pre .pseudo,
-pre .apache .cbracket,
-pre .tex .formula {
+pre.zenburn .diff .deletion,
+pre.zenburn .string,
+pre.zenburn .tag .value,
+pre.zenburn .pre.zenburnprocessor,
+pre.zenburn .built_in,
+pre.zenburn .sql .aggregate,
+pre.zenburn .javadoc,
+pre.zenburn .smalltalk .class,
+pre.zenburn .smalltalk .localvars,
+pre.zenburn .smalltalk .array,
+pre.zenburn .css .rules .value,
+pre.zenburn .attr_selector,
+pre.zenburn .pseudo,
+pre.zenburn .apache .cbracket,
+pre.zenburn .tex .formula {
   color: #CC9393;
 }
 
-pre .shebang,
-pre .diff .addition,
-pre .comment,
-pre .java .annotation,
-pre .template_comment,
-pre .pi,
-pre .doctype {
+pre.zenburn .shebang,
+pre.zenburn .diff .addition,
+pre.zenburn .comment,
+pre.zenburn .java .annotation,
+pre.zenburn .template_comment,
+pre.zenburn .pi,
+pre.zenburn .doctype {
   color: #7F9F7F;
 }
 
-pre .coffeescript .javascript,
-pre .javascript .xml,
-pre .tex .formula,
-pre .xml .javascript,
-pre .xml .vbscript,
-pre .xml .css,
-pre .xml .cdata {
+pre.zenburn .coffeescript .javascript,
+pre.zenburn .javascript .xml,
+pre.zenburn .tex .formula,
+pre.zenburn .xml .javascript,
+pre.zenburn .xml .vbscript,
+pre.zenburn .xml .css,
+pre.zenburn .xml .cdata {
   opacity: 0.5;
 }

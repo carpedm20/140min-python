@@ -33,3 +33,6 @@
 .reveal strong {
   font-size: 1.44em;
 }
+.reveal .transparent {
+  background: transparent !important;
+}

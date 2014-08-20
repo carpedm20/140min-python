@@ -23,6 +23,7 @@
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/monokai.css">
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -305,7 +306,7 @@
           <img src="img/pip.png">
         </section>
 
-				<section data-transition="linear" data-background="img/django.jpg" data-background-transition="slide" data-markdown>
+        <section data-transition="linear" data-background="img/django.jpg" data-background-transition="slide">
         </section>
 
         <section data-transition="linear" data-background="#ffffff" data-background-transition="slide">
@@ -324,7 +325,168 @@
 
         <section data-transition="linear" data-background="#ffffff" data-background-transition="slide">
           <p><img class="borderless" src="img/beautifulsoup.jpg"></p>
+          <h2>Beautifulsoup</h2>
           <p><small><em>Quick and Easy web parser</em></small></p>
+        </section>
+
+        <section>
+          <h2>슬쩍 보는 파이썬 문법</h2>
+        </section>
+
+        <section data-transition="linear" data-background="img/background_half2.png" data-background-transition="slide">
+          <pre class="zenburn left" style="margin-left: 180px; width:20%;">
+            <code class="transparent python" data-trim>
+my_var = 3
+
+my_var += 2
+my_var -= 1
+
+print my_var
+            </code>
+          </pre>
+          <pre class="monokai left" style="margin-left: 190px; width:30%;">
+            <code class="transparent cpp" data-trim>
+int my_var = 3
+
+my_var += 2
+my_var -= 1
+
+cout << my_var << endl;
+            </code>
+          </pre>
+        </section>
+
+        <section data-transition="linear" data-background="img/background_half.png" data-background-transition="slide">
+          <pre class="zenburn left" style="margin-left: 30px; width:45%;">
+            <code class="transparent python" data-trim>
+my_string = "Hello"
+my_string += " world."
+
+print my_string
+
+my_var, my_string = my_string, my_var
+            </code>
+          </pre>
+          <pre class="monokai left" style="margin-left: 70px; width:40%;">
+            <code class="transparent cpp" data-trim>
+string my_string = "Hello"
+my_string += " world."
+
+cout << my_string << endl;
+
+// not possible
+            </code>
+          </pre>
+        </section>
+
+        <section data-transition="linear" data-background="img/background_half2.png" data-background-transition="slide">
+          <pre class="zenburn left" style="margin-left: 0; width:50%;">
+            <code class="transparent python" data-trim>
+my_list = ["apple", "banana", 3.14]
+my_list[0] = "I hate banana"
+
+print my_list
+# ['I hate banana', 'banana', 3.14]
+
+my_dict = {"key": "value", "pi": 3.14}
+
+print my_dict["pi"]
+# 3.14
+            </code>
+          </pre>
+          <pre class="monokai left" style="margin-left: 10px; width:48%;">
+            <code class="transparent cpp" data-trim>
+#include <map>
+#include <string>
+
+// partially possible
+string my_list[2] = {"apple", "banana"};
+my_list[0] = "I hate banana";
+
+cout << my_list << endl;
+// 0x7fff5d962650
+
+// partially possible
+map< string, double> my_list;
+
+my_dict["pi"] = 3.14;
+
+cout << my_dict["pi"] << endl;
+// 3.14
+
+//test
+            </code>
+          </pre>
+        </section>
+
+        <section data-transition="linear" data-background="img/background_half.png" data-background-transition="slide">
+          <pre class="zenburn left" style="margin-left: 0; width:50%;">
+            <code class="transparent python" data-trim>
+nums = range(10)
+
+print nums 
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+for num in nums:
+    if num in (3, 4, 7, 9):
+        break
+    else:
+        continue
+
+while nums[1] == 1:
+    pass
+            </code>
+          </pre>
+          <pre class="monokai left" style="margin-left: 9px; width:48%;">
+            <code class="transparent cpp" style="font-size: 0.85em;" data-trim>
+int nums[10];
+for (int i=0; i<10; i++)
+  nums[i] = i;
+
+cout << nums<< endl;
+// 0x7fff59c965a0
+
+#include <algorithm>
+int size=sizeof(nums)/sizeof(*nums);
+
+for (int i=0; i < size; i++) {
+    if (find(nums, nums+size, i) != nums+size) {
+        break;
+    else
+        continue;
+}
+
+
+// test
+            </code>
+          </pre>
+        </section>
+
+				<section data-transition="linear" data-background="#3f3f3f" data-background-transition="slide">
+          <pre class="zenburn">
+            <code>
+def passing_example(a_list, an_int=2, a_string="A default string"):
+    a_list.append("A new item")
+    an_int = 4
+    return a_list, an_int, a_string
+
+my_list = [1, 2, 3]
+my_int = 10
+
+print passing_example(my_list, my_int)
+# ([1, 2, 3, 'A new item'], 4, "A default string")
+
+print my_list
+# [1, 2, 3, 'A new item'] # passed by reference
+
+print my_int # immutable types (tuples, ints, strings, etc)
+# 10
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <img src="img/easy.png">
         </section>
 
         <section data-transition="fade">
@@ -350,6 +512,7 @@
             <li><a href="https://wikidocs.net/book/1">점프 투 파이썬</a></li>
             <li><a href="http://mearie.org/documents/how-not-to-teach-python/seminar.pdf">발로 하는 파이썬 세미나</a></li>
             <li><a href="https://wikidocs.net/book/1">점프 투 파이썬</a></li>
+            <li><a href="http://www.stavros.io/tutorials/python/">Learn Python in 10 minutes</a></li>
           </ul>
         </section>
 
