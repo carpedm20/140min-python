@@ -113,11 +113,12 @@ while(me.awake()):
 				</section>
 
         <section data-transition="fade">
-					<h3>파이썬은</h3>
-					<h2>
+					<h3>파이썬의 가장 큰 특징은</h3>
+					<h2 class="fragment" data-fragment-index="0">
             스크립트 언어
 					</h2>
-          <p><small><em>컴파일 안한다고 합니다</em></small></p>
+          <p class="fragment" data-fragment-index="0"><small><em>컴파일 안한다고 합니다</em></small></p>
+          <!--<note>컴파일 언어와 달리 컴파일의 과정을 거치지 않고 실행하는 언어</note>-->
 				</section>
 
         <section>
@@ -156,7 +157,8 @@ python pyramid.py
 
         <section data-transition="zoom">
           <p><img class="borderless" src="img/fast.png"/></p>
-          <p>빠르고 <b>즐거운</b> 코딩</p>
+          <p>빠른  코딩</p>
+          <p><small><em>(feat. 파이썬 인터프린터)</em></small></p>
 				</section>
 
         <section data-transition="linear">
@@ -217,19 +219,20 @@ for i in range(row):
             </ol>
           </section>
 
-          <section data-markdown>
-            <script type="text/template">
-              ## 1. 인간적인 언어이다
-              <small><em>라고 쓰고 "읽기 쉽다" 라고 읽는다</em></small>
+          <section>
+            <h2>1. 인간적인 언어이다</h2>
+            <small><em>라고 쓰고 "읽기 쉽다" 라고 읽는다</em></small>
+            <pre class="zenburn">
+              <code class="python" data-trim>
+if "여친" not in ["김태희", "천송이", "공효진"]:
+    print "여친이 없습니다"
 
-              ```
-              if "여친" not in ["김태희","천송이","공효진"]:
-                print "여친이 없습니다"
-
-              for i in ["설마", "벌써", "지루하신건", "아니시죠?"]:
-                print i
-              ```
-            </script>
+if "검색" is "구글":
+    print "개발자"
+else:
+    print "일반인"
+              </code>
+            </pre>
           </section>
 
           <section>
@@ -270,7 +273,7 @@ for (int i=0; i < size; i++) {
           </section>
 
           <section>
-            <h2>4. 프로그래밍이 재밌다</h2>
+            <h3>4. 프로그래밍이 <strong>재밌다</strong></h3>
             <p>나에게 파이썬만큼 프로그래밍을 하는 순간을</p>
             <p><strong>즐기게</strong> 해준 언어는 없었다</p>
             <br/>
@@ -335,13 +338,6 @@ for (int i=0; i < size; i++) {
           <img src="img/pip.png">
         </section>
 
-        <section data-transition="linear" data-background="img/django.jpg" data-background-transition="slide">
-        </section>
-
-        <section data-transition="linear" data-background="#ffffff" data-background-transition="slide">
-          <img class="borderless" width="60%" src="img/flask.png">
-        </section>
-
         <section data-transition="linear" data-background="#ffffff" data-background-transition="slide">
           <img class="borderless" src="img/requests.png">
           <p><small><em>Python HTTP Requests for Humans</em></small></p>
@@ -353,12 +349,19 @@ for (int i=0; i < size; i++) {
           <p><small><em>Quick and Easy web parser</em></small></p>
         </section>
 
+        <section data-transition="linear" data-background="#ffffff" data-background-transition="slide">
+          <img class="borderless" width="60%" src="img/flask.png">
+        </section>
+
+        <section data-transition="linear" data-background="img/django.jpg" data-background-transition="slide">
+        </section>
+
         <section>
           <h2>슬쩍 보는 파이썬 문법</h2>
         </section>
 
         <section data-transition="linear" data-background="img/background_half.png" data-background-transition="slide">
-          <pre class="zenburn left" style="margin-left: 180px; width:20%;">
+          <pre class="zenburn left" style="margin-left: 210px; width:20%;">
             <code class="transparent python" data-trim>
 my_var = 3
 
@@ -381,22 +384,22 @@ cout << my_var << endl;
         </section>
 
         <section data-transition="linear" data-background="img/background_half.png" data-background-transition="slide">
-          <pre class="zenburn left" style="margin-left: 30px; width:45%;">
+          <pre class="zenburn left" style="margin-left: 20px; width:45%;">
             <code class="transparent python" data-trim>
+my_var = 1
 my_string = "Hello"
-my_string += " world."
 
-print my_string
+print my_string + " World!"
 
 my_var, my_string = my_string, my_var
             </code>
           </pre>
-          <pre class="monokai left" style="margin-left: 70px; width:40%;">
+          <pre class="monokai left" style="margin-left: 52px; width:46%;">
             <code class="transparent cpp" data-trim>
+int my_var = 1
 string my_string = "Hello"
-my_string += " world."
 
-cout << my_string << endl;
+cout << my_string << " World!" << endl;
 
 // not possible
             </code>
@@ -421,7 +424,6 @@ print my_dict["pi"]
           <pre class="monokai left" style="margin-left: 10px; width:48%;">
             <code class="transparent cpp" data-trim>
 #include < map>
-#include < string>
 
 // partially possible
 string my_list[2] = {"apple", "banana"};
@@ -450,7 +452,7 @@ print nums
 // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 for num in nums:
-    if num in (3, 4, 7, 9):
+    if num in [3, 4, 7, 9]:
         break
     else:
         continue
@@ -484,22 +486,21 @@ for (int i=0; i < size; i++) {
 				<section data-transition="linear" data-background="#3f3f3f" data-background-transition="fade">
           <pre class="zenburn">
             <code class="transparent">
-def passing_example(a_list, an_int=2, a_string="A default string"):
-    a_list.append("A new item")
-    an_int = 4
-    return a_list, an_int, a_string
+def sum(numbers = [1,2,3]):
+    if -1 in numbers:
+        return False
+    else:
+        ans = 0
 
-my_list = [1, 2, 3]
-my_int = 10
+        for i in numbers:
+            ans += i
 
-print passing_example(my_list, my_int)
-# ([1, 2, 3, 'A new item'], 4, "A default string")
+        return ans
 
-print my_list
-# [1, 2, 3, 'A new item'] # passed by reference
-
-print my_int # immutable types (tuples, ints, strings, etc)
-# 10
+print sum() // 6
+print sum(range(10)) // 45
+if sum([-1, 3]):
+    print "나라가 허락한 유일한 마약, 파이썬..."
             </code>
           </pre>
         </section>
