@@ -113,14 +113,27 @@ while(me.awake()):
 				</section>
 
         <section data-transition="fade">
-					<h3>Python은</h3>
+					<h3>파이썬은</h3>
 					<h2>
             스크립트 언어
 					</h2>
-          <p><small><em>
-            컴파일 안한다고 합니다
-          </em></small></p>
+          <p><small><em>컴파일 안한다고 합니다</em></small></p>
 				</section>
+
+        <section>
+          <pre class="monokai">
+            <code class="bash" data-trim>
+vi pyramid.cpp
+g++ pyramid.cpp -o pyramid
+./pyramid
+          </code></pre>
+          <pre class="zenburn">
+            <code class="bash" data-trim>
+vi pyramid.py
+python pyramid.py
+          </code></pre>
+          <small><em>소스코드가 곧 실행파일</em></small>
+        </section>
 
         <section data-transition="fade">
 					<h2>왜 배워야 할까?</h2>
@@ -235,7 +248,7 @@ for lang in langs:
                 </code>
               </pre>
             <pre class="monokai right" style="width:50%;">
-              <code class="cpp" style="font-size:0.85em;" data-trim>
+              <code class="cpp" style="font-size:0.81em;" data-trim>
 #include < algorithm>
 string langs[3] = ["python","c++","java"];
 
