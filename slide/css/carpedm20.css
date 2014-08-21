@@ -1,3 +1,7 @@
+
+body h1, h2, h3, p, em {
+  font-family: 'Nanum Gothic', 'Quicksand', sans-serif;
+}
 .reveal h1 {
   font-size: 2.77em;
 }
