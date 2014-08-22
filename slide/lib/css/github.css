@@ -1,0 +1,125 @@
+pre.github code {
+  display: block; padding: 0.5em;
+  color: #333;
+  background: #f8f8ff
+}
+ 
+pre.github .comment,
+pre.github .template_comment,
+pre.github .diff .header,
+pre.github .javadoc {
+  color: #998;
+  font-style: italic
+}
+ 
+pre.github .keyword,
+pre.github .css .rule .keyword,
+pre.github .winutils,
+pre.github .javascript .title,
+pre.github .nginx .title,
+pre.github .subst,
+pre.github .request,
+pre.github .status {
+  color: #333;
+  font-weight: bold
+}
+ 
+pre.github .number,
+pre.github .hexcolor,
+pre.github .ruby .constant {
+  color: #099;
+}
+ 
+pre.github .string,
+pre.github .tag .value,
+pre.github .phpdoc,
+pre.github .tex .formula {
+  color: #d14
+}
+ 
+pre.github .title,
+pre.github .id,
+pre.github .coffeescript .params,
+pre.github .scss .pre.githubprocessor {
+  color: #900;
+  font-weight: bold
+}
+ 
+pre.github .javascript .title,
+pre.github .lisp .title,
+pre.github .clojure .title,
+pre.github .subst {
+  font-weight: normal
+}
+ 
+pre.github .class .title,
+pre.github .haskell .type,
+pre.github .vhdl .literal,
+pre.github .tex .command {
+  color: #458;
+  font-weight: bold
+}
+ 
+pre.github .tag,
+pre.github .tag .title,
+pre.github .rules .property,
+pre.github .django .tag .keyword {
+  color: #000080;
+  font-weight: normal
+}
+ 
+pre.github .attribute,
+pre.github .variable,
+pre.github .lisp .body {
+  color: #008080
+}
+ 
+pre.github .regexp {
+  color: #009926
+}
+ 
+pre.github .class {
+  color: #458;
+  font-weight: bold
+}
+ 
+pre.github .symbol,
+pre.github .ruby .symbol .string,
+pre.github .lisp .keyword,
+pre.github .tex .special,
+pre.github .prompt {
+  color: #990073
+}
+ 
+pre.github .built_in,
+pre.github .lisp .title,
+pre.github .clojure .built_in {
+  color: #0086b3
+}
+ 
+pre.github .pre.githubprocessor,
+pre.github .pragma,
+pre.github .pi,
+pre.github .doctype,
+pre.github .shebang,
+pre.github .cdata {
+  color: #999;
+  font-weight: bold
+}
+ 
+pre.github .deletion {
+  background: #fdd
+}
+ 
+pre.github .addition {
+  background: #dfd
+}
+ 
+pre.github .diff .change {
+  background: #0086b3
+}
+ 
+pre.github .chunk {
+  color: #aaa
+}
+ 

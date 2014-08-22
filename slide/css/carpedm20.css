@@ -40,3 +40,6 @@ body h1, h2, h3, p, em {
 .reveal .transparent {
   background: transparent !important;
 }
+.white {
+  margin-bottom: 0px !important;
+}

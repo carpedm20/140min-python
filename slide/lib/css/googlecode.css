@@ -1,0 +1,144 @@
+/*
+
+Google Code style (c) Aahan Krish <geekpanth3r@gmail.com>
+
+*/
+
+pre.googlecode code {
+  display: block; padding: 0.5em;
+  background: white; color: black;
+}
+
+pre.googlecode .comment,
+pre.googlecode .template_comment,
+pre.googlecode .javadoc,
+pre.googlecode .comment * {
+  color: #800;
+}
+
+pre.googlecode .keyword,
+pre.googlecode .method,
+pre.googlecode .list .title,
+pre.googlecode .clojure .built_in,
+pre.googlecode .nginx .title,
+pre.googlecode .tag .title,
+pre.googlecode .setting .value,
+pre.googlecode .winutils,
+pre.googlecode .tex .command,
+pre.googlecode .http .title,
+pre.googlecode .request,
+pre.googlecode .status {
+  color: #008;
+}
+
+pre.googlecode .envvar,
+pre.googlecode .tex .special {
+  color: #660;
+}
+
+pre.googlecode .string,
+pre.googlecode .tag .value,
+pre.googlecode .cdata,
+pre.googlecode .filter .argument,
+pre.googlecode .attr_selector,
+pre.googlecode .apache .cbracket,
+pre.googlecode .date,
+pre.googlecode .regexp {
+  color: #080;
+}
+
+pre.googlecode .sub .identifier,
+pre.googlecode .pi,
+pre.googlecode .tag,
+pre.googlecode .tag .keyword,
+pre.googlecode .decorator,
+pre.googlecode .ini .title,
+pre.googlecode .shebang,
+pre.googlecode .prompt,
+pre.googlecode .hexcolor,
+pre.googlecode .rules .value,
+pre.googlecode .css .value .number,
+pre.googlecode .literal,
+pre.googlecode .symbol,
+pre.googlecode .ruby .symbol .string,
+pre.googlecode .number,
+pre.googlecode .css .function,
+pre.googlecode .clojure .attribute {
+  color: #066;
+}
+
+pre.googlecode .class .title,
+pre.googlecode .haskell .type,
+pre.googlecode .smalltalk .class,
+pre.googlecode .javadoctag,
+pre.googlecode .yardoctag,
+pre.googlecode .phpdoc,
+pre.googlecode .typename,
+pre.googlecode .tag .attribute,
+pre.googlecode .doctype,
+pre.googlecode .class .id,
+pre.googlecode .built_in,
+pre.googlecode .setting,
+pre.googlecode .params,
+pre.googlecode .variable,
+pre.googlecode .clojure .title {
+  color: #606;
+}
+
+pre.googlecode .css .tag,
+pre.googlecode .rules .property,
+pre.googlecode .pseudo,
+pre.googlecode .subst {
+  color: #000;
+}
+
+pre.googlecode .css .class, pre.googlecode .css .id {
+  color: #9B703F;
+}
+
+pre.googlecode .value .important {
+  color: #ff7700;
+  font-weight: bold;
+}
+
+pre.googlecode .rules .keyword {
+  color: #C5AF75;
+}
+
+pre.googlecode .annotation,
+pre.googlecode .apache .sqbracket,
+pre.googlecode .nginx .built_in {
+  color: #9B859D;
+}
+
+pre.googlecode .pre.googlecodeprocessor,
+pre.googlecode .pre.googlecodeprocessor * {
+  color: #444;
+}
+
+pre.googlecode .tex .formula {
+  background-color: #EEE;
+  font-style: italic;
+}
+
+pre.googlecode .diff .header,
+pre.googlecode .chunk {
+  color: #808080;
+  font-weight: bold;
+}
+
+pre.googlecode .diff .change {
+  background-color: #BCCFF9;
+}
+
+pre.googlecode .addition {
+  background-color: #BAEEBA;
+}
+
+pre.googlecode .deletion {
+  background-color: #FFC8BD;
+}
+
+pre.googlecode .comment .yardoctag {
+  font-weight: bold;
+}
